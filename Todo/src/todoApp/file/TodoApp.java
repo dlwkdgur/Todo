@@ -18,6 +18,7 @@ public class TodoApp {
 			case 2 -> todos.list();
 			case 3 -> todos.delete(br);
 			default -> {
+				todos.save();
 				System.out.println("종료합니다.");
 				return;
 			}
